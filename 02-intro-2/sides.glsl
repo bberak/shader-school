@@ -4,9 +4,10 @@ void sideLengths(
   out highp float opposite, 
   out highp float adjacent) {
 
+  highp float angleInRadians = radians(angleInDegrees);
 
-  //TODO: Calculate side lengths here
-
+  opposite = hypotenuse * sin(angleInRadians);
+  adjacent = hypotenuse * cos(angleInRadians);
 }
 
 //Do not change this line
